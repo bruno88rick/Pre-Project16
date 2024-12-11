@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B6896A872D0918B700A05A16 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = B6896A862D0918B700A05A16 /* SamplePackage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B6C8CD4E2CF0F956006AEC21 /* Pre-Project16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pre-Project16.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6896A872D0918B700A05A16 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "Pre-Project16";
 			packageProductDependencies = (
+				B6896A862D0918B700A05A16 /* SamplePackage */,
 			);
 			productName = "Pre-Project16";
 			productReference = B6C8CD4E2CF0F956006AEC21 /* Pre-Project16.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = B6C8CD452CF0F956006AEC21;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B6896A852D0918B700A05A16 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B6C8CD4F2CF0F956006AEC21 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6896A852D0918B700A05A16 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6896A862D0918B700A05A16 /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6896A852D0918B700A05A16 /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6C8CD462CF0F956006AEC21 /* Project object */;
 }
